@@ -6,7 +6,7 @@ function compareTriplets(a, b) {
     for (i = 0; i < a.length; i++) {
         if (a[i] > b[i]) {
             alicePoints ++;
-        } else {
+        } else if (a[i] < b[i]) {
             bobPoints ++;
         }
 

@@ -3,15 +3,18 @@ function compareTriplets(a, b) {
     let bobPoints = 0;
     let resultArray = [];
 
-    for (i = 0; i <= a.length; i++) {
+    for (i = 0; i < a.length; i++) {
         if (a[i] > b[i]) {
             alicePoints ++;
         } else {
             bobPoints ++;
         }
+
+        resultArray[0] = alicePoints;
+        resultArray[1] = bobPoints;
     }
 
-    return resultArray[alicePoints, bobPoints];
+    return resultArray;
 
 }
 
